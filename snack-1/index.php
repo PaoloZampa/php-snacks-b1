@@ -53,7 +53,10 @@ foreach ($matches as $match) {
     <?php foreach ($matches as $match): ?>
 
         <p>
-            <?= $match['home_team'] . " - " . $match['away_team'] . " | " . $match['home_score'] . " - " . $match['away_score'] ?>
+            <?= $match['home_team'] ?> -
+            <?= $match['away_team'] ?> |
+            <?= $match['home_score'] ?> -
+            <?= $match['away_score'] ?>
         </p>
 
     <?php endforeach ?>
