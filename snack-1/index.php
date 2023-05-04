@@ -30,7 +30,7 @@ $matches = [
     ]
 ];
 
-var_dump($matches);
+//var_dump($matches);
 
 foreach ($matches as $match) {
     echo $match['home_team'] . " - " . $match['away_team'] . " | " . $match['home_score'] . " - " . $match['away_score'] . "<br>";
@@ -49,6 +49,15 @@ foreach ($matches as $match) {
 </head>
 
 <body>
+
+    <?php foreach ($matches as $match): ?>
+
+        <p>
+            <?= $match['home_team'] . " - " . $match['away_team'] . " | " . $match['home_score'] . " - " . $match['away_score'] ?>
+        </p>
+
+    <?php endforeach ?>
+
 
 </body>
 
